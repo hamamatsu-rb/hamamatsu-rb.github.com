@@ -20,24 +20,23 @@ Hamamatsu.rbは、静岡県浜松市周辺のRuby技術者やRubyに関心があ
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
 <script>
-jQuery(document).ready(function($) {
-  // Members JSON data fetch offline.
-  // curl -u "<USERNAME>:token:<TOKEN>" https://github.com/api/v2/json/teams/38404/members
-  // see http://develop.github.com/p/orgs.html
-  var url = window.location + "js/members.json";
-  
-  $.getJSON(url, null, function(data, status) {
-    if (status != 'success') {
-      $("#members").html("Oops, Something Is Wrong...")
-      return;
+jQuery(function(){
+  $.ajax({
+    url: 'http://api.twitter.com/1/hamamatsurb/hamamatsu-rb/members.json',
+    dataType: 'jsonp',
+    success: function(data, dataType) {
+      $.each(data.users, function(i, user) {
+	var name = user.screen_name;
+	var href = 'http://twitter.com/' + user.screen_name;
+	var src = user.profile_image_url;
+	var link = $('<a href="' + href + '" title="' + name + '"><img src="' + src + '" width="48px" /></a>');
+        $("#members").append(link);
+      });
+    },
+    error: function(XMLHttpRequest, status, errorThrown) {
+      console.log(status);
+      $("#members").html("Oops, Something Is Wrong...");
     }
-    
-    $(data.users).each(function(i, user) {
-      var href = "https://github.com/" + user.login;
-      var src = "https://secure.gravatar.com/avatar/" + user.gravatar_id + "?s=40"
-      var link = $('<a href="' + href + '" title="' + user.name + '"><img src="' + src + '" /></a>');
-      $("#members").append(link);
-    });
   });
 });
 </script>
