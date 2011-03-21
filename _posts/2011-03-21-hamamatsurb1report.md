@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Hamamatsu.rb#1: キックオフ・ミーティング 2011年3月9日(水)開催レポート"
+title: "Hamamatsu.rb#1: キックオフ・ミーティング 開催レポート"
 ---
 
 # イベント概要
