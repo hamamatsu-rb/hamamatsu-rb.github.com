@@ -53,6 +53,8 @@ Railsを仕事で使ったことがある人が4人ぐらい、その他のプ�
 
 @ksmakoto さんから、Rubyコアチームに提案して採用されたコードや提案中のコードに関して発表がありました。
 
+@mackato が、Ruby製のブログツールJekyllで作成した Hamamatsu.rb のウェブサイト(今見ているサイトです)と、Hamamatsu.rb用のTwitterボット[hamamatsurb-bot](https://github.com/hamamatsu-rb/hamamatsurb-bot)を紹介しました。
+
 ### 次回の開催について
 
 次回の開催は4/13(水)の19:00〜21:00と決まりました。今後しばらくは毎月第2水曜日の夜に開催する予定です。
