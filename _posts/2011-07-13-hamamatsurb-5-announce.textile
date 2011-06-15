@@ -38,4 +38,3 @@ ATNDから参加登録をお願いします。
 
 また、あわせてHamamatsu.rbのウェブサイトからTwitterグループやメーリングリストへの登録もお願いいたします。
 "Hamamatsu.rbウェブサイト":http://hamamatsu-rb.github.com/
-
