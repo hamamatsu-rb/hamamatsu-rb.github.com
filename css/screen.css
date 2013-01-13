@@ -142,6 +142,76 @@ ul.posts {
         border: 0;
       }
 
+
+/*****************************************************************************/
+/*
+/* Events
+/*
+/*****************************************************************************/
+
+.events {
+    list-style-type: none;
+    margin-bottom: 2em;
+}
+
+.event {
+    margin: 0.5em;
+}
+
+.event a {
+    text-decoration: none;
+}
+
+.event .started_at {
+    color: #696969;
+    font-family: Monaco, "Courier New", monospace;
+    font-size: 80%;
+}
+
+.event .event_title {
+    display: inline;
+    font-weight: normal;
+}
+
+.event.future {
+    padding: 10px;
+    font-size: 120%;
+    background-color: #fbf2ff;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+.event.future .started_at {
+    color: #000000;
+}
+
+.event.past {
+    font-size: 90%;
+    padding: 0 10px;
+}
+
+.event.past a {
+    color: #5353a6;
+}
+
+.event.past a:visited {
+    color: #a653a6;
+}
+
+.event.past .catch {
+    color: silver;
+}
+
+.event.no-future {
+    padding: 10px;
+    font-size: 90%;
+    background-color: #fbf2ff;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
 /*****************************************************************************/
 /*
 /* Posts
