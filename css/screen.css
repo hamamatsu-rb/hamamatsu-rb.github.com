@@ -188,6 +188,7 @@ ul.posts {
 
 .event.past {
     font-size: 90%;
+    padding: 0 10px;
 }
 
 .event.past a {
