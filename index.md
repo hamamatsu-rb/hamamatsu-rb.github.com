@@ -57,14 +57,23 @@ jQuery(function(){
 });
 </script>
 
-<script id="event-template" type="text/x-jquery-tmpl">
-    <li class="event">
-      <div>
-        &raquo; <h2 class="event_title"><a class="link" href="${event_url}" ref="external">${title}</a></h2>
-        <span class="started_at">${started_at}</span>
-      </div>
-      <span class="catch">${catch_val}</span>
-    </li>
+<script id="event-template-future" type="text/x-jquery-tmpl">
+  <li class="event future">
+    <div>
+      <h2 class="event_title"><a class="link" href="${event_url}" ref="external">${title}</a></h2>
+      &laquo; <span class="started_at">${started_at_string}</span>
+    </div>
+    <span class="catch">${catch_val}</span>
+  </li>
+</script>
+<script id="event-template-past" type="text/x-jquery-tmpl">
+  <li class="event past">
+    <div>
+      <h2 class="event_title"><a class="link" href="${event_url}" ref="external">${title}</a></h2>
+      &laquo; <span class="started_at">${started_at_string}</span>
+    </div>
+    <span class="catch">${catch_val}</span>
+  </li>
 </script>
 <script type="text/javascript">
   $(function(){
@@ -77,12 +86,14 @@ jQuery(function(){
         for(var i = 0; i < result.events.length; i++){
             var event = result.events[i];
 
-            var day = new Date(event.started_at)
+            var day = new Date(event.started_at);
+            var ended_at = new Date(event.ended_at);
             var weeks = "日月火水木金土";
-            event.started_at = _.str.sprintf("%d年%02d月%02d日(%s) %d:%02d〜", day.getFullYear(), day.getMonth() + 1, day.getDate(), weeks[day.getDay()], day.getHours(), day.getMinutes());
+            event.started_at_string = _.str.sprintf("%d年%02d月%02d日(%s) %d:%02d〜", day.getFullYear(), day.getMonth() + 1, day.getDate(), weeks[day.getDay()], day.getHours(), day.getMinutes());
             event.catch_val = event.catch // catchは予約後のためかtmplがエラーを起こすので
+            event.is_future = (new Date().getTime()) < ended_at.getTime();
 
-            $("#event-template").tmpl(event).appendTo(".event-dest");
+            $("#event-template-" + (event.is_future ? "future" : "past")).tmpl(event).appendTo(".event-dest");
         }
       },
       error: function(XMLHttpRequest, status, errorThrown) {

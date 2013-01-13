@@ -158,6 +158,10 @@ ul.posts {
     margin: 0.5em;
 }
 
+.event a {
+    text-decoration: none;
+}
+
 .event .started_at {
     color: #696969;
     font-family: Monaco, "Courier New", monospace;
@@ -166,12 +170,36 @@ ul.posts {
 
 .event .event_title {
     display: inline;
-    font-size: 110%;
     font-weight: normal;
 }
 
-.event .link {
-    text-decoration: none;
+.event.future {
+    padding: 10px;
+    font-size: 120%;
+    background-color: #fbf2ff;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+.event.future .started_at {
+    color: #000000;
+}
+
+.event.past {
+    font-size: 90%;
+}
+
+.event.past a {
+    color: #5353a6;
+}
+
+.event.past a:visited {
+    color: #a653a6;
+}
+
+.event.past .catch {
+    color: silver;
 }
 
 /*****************************************************************************/
