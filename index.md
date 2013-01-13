@@ -75,6 +75,11 @@ jQuery(function(){
     <span class="catch">${catch_val}</span>
   </li>
 </script>
+<script id="event-template-no-future" type="text/x-jquery-tmpl">
+  <li class="event no-future">
+    次のイベントがまだ登録されていません。登録されるまで待ったり、担当の人を急かしたりしてください。
+  </li>
+</script>
 <script type="text/javascript">
   $(function(){
     $.ajax({
@@ -83,17 +88,22 @@ jQuery(function(){
       data: 'keyword=hamamatsu.rb&count=5&format=jsonp',
       success: function(result){
         $(".event-dest").empty();
+        var is_empty = true;
         for(var i = 0; i < result.events.length; i++){
-            var event = result.events[i];
+          var event = result.events[i];
 
-            var day = new Date(event.started_at);
-            var ended_at = new Date(event.ended_at);
-            var weeks = "日月火水木金土";
-            event.started_at_string = _.str.sprintf("%d年%02d月%02d日(%s) %d:%02d〜", day.getFullYear(), day.getMonth() + 1, day.getDate(), weeks[day.getDay()], day.getHours(), day.getMinutes());
-            event.catch_val = event.catch // catchは予約後のためかtmplがエラーを起こすので
-            event.is_future = (new Date().getTime()) < ended_at.getTime();
+          var day = new Date(event.started_at);
+          var ended_at = new Date(event.ended_at);
+          var weeks = "日月火水木金土";
+          event.started_at_string = _.str.sprintf("%d年%02d月%02d日(%s) %d:%02d〜", day.getFullYear(), day.getMonth() + 1, day.getDate(), weeks[day.getDay()], day.getHours(), day.getMinutes());
+          event.catch_val = event.catch // catchは予約後のためかtmplがエラーを起こすので
+          event.is_future = (new Date().getTime()) < ended_at.getTime();
 
-            $("#event-template-" + (event.is_future ? "future" : "past")).tmpl(event).appendTo(".event-dest");
+          if(event.is_future){ is_empty = false; }
+          $("#event-template-" + (event.is_future ? "future" : "past")).tmpl(event).appendTo(".event-dest");
+        }
+        if(is_empty){
+          $("#event-template-no-future").tmpl({}).prependTo(".event-dest");
         }
       },
       error: function(XMLHttpRequest, status, errorThrown) {

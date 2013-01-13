@@ -203,6 +203,15 @@ ul.posts {
     color: silver;
 }
 
+.event.no-future {
+    padding: 10px;
+    font-size: 90%;
+    background-color: #fbf2ff;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
 /*****************************************************************************/
 /*
 /* Posts
