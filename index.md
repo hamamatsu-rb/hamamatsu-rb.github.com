@@ -5,17 +5,8 @@ title: Hamamatsu.rb
 
 Hamamatsu.rbは、静岡県浜松市周辺のRuby技術者やRubyに関心がある人が集まって、Rubyに関する何か(兼飲み会)をする予定の地域コミュニティです。
 
-# ATND
-<ul class="posts atnd-dest" ></ul>
-<script id="atnd-template" type="text/x-jquery-tmpl">
-    <li><span>${started_at}</span> &raquo; <a href="${event_url}">${title}</a></li>
-</script>
-<script type="text/javascript">
-    function handleAtnd(results) {
-        $("#atnd-template").tmpl(results.events).appendTo(".atnd-dest");
-    }
-</script>
-
+# ATNDs
+<ul class="events event-dest" ><li>ATNDを検索中...</li></ul>
 
 # お知らせ
 <ul class="posts">
@@ -40,8 +31,9 @@ Twitter
 # Facebook
 <iframe src="http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FHamamatsurb%2F196508373706679&amp;width=585&amp;colorscheme=light&amp;show_faces=true&amp;stream=false&amp;header=false&amp;height=182" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:585px; height:182px;" allowTransparency="true"></iframe>
 
-<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.3.min.js"></script>
-<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/underscore.string.min.js"></script>
+<script type="text/javascript" src="js/jquery.tmpl.min.js"></script>
 
 <script>
 jQuery(function(){
@@ -65,4 +57,38 @@ jQuery(function(){
 });
 </script>
 
-<script type="text/javascript" src="http://api.atnd.org/events/?keyword=hamamatsu.rb&count=5&format=jsonp&callback=handleAtnd"></script>
+<script id="event-template" type="text/x-jquery-tmpl">
+    <li class="event">
+      <div>
+        &raquo; <h2 class="event_title"><a class="link" href="${event_url}" ref="external">${title}</a></h2>
+        <span class="started_at">${started_at}</span>
+      </div>
+      <span class="catch">${catch_val}</span>
+    </li>
+</script>
+<script type="text/javascript">
+  $(function(){
+    $.ajax({
+      url: 'http://api.atnd.org/events/',
+      dataType: 'jsonp',
+      data: 'keyword=hamamatsu.rb&count=5&format=jsonp',
+      success: function(result){
+        $(".event-dest").empty();
+        for(var i = 0; i < result.events.length; i++){
+            var event = result.events[i];
+
+            var day = new Date(event.started_at)
+            var weeks = "日月火水木金土";
+            event.started_at = _.str.sprintf("%d年%02d月%02d日(%s) %d:%02d〜", day.getFullYear(), day.getMonth() + 1, day.getDate(), weeks[day.getDay()], day.getHours(), day.getMinutes());
+            event.catch_val = event.catch // catchは予約後のためかtmplがエラーを起こすので
+
+            $("#event-template").tmpl(event).appendTo(".event-dest");
+        }
+      },
+      error: function(XMLHttpRequest, status, errorThrown) {
+        console.log(status);
+        $(".event-dest").html("Oops, Something Is Wrong...");
+      }
+    });
+  });
+</script>

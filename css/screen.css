@@ -142,6 +142,38 @@ ul.posts {
         border: 0;
       }
 
+
+/*****************************************************************************/
+/*
+/* Events
+/*
+/*****************************************************************************/
+
+.events {
+    list-style-type: none;
+    margin-bottom: 2em;
+}
+
+.event {
+    margin: 0.5em;
+}
+
+.event .started_at {
+    color: #696969;
+    font-family: Monaco, "Courier New", monospace;
+    font-size: 80%;
+}
+
+.event .event_title {
+    display: inline;
+    font-size: 110%;
+    font-weight: normal;
+}
+
+.event .link {
+    text-decoration: none;
+}
+
 /*****************************************************************************/
 /*
 /* Posts
