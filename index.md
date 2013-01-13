@@ -5,6 +5,18 @@ title: Hamamatsu.rb
 
 Hamamatsu.rbは、静岡県浜松市周辺のRuby技術者やRubyに関心がある人が集まって、Rubyに関する何か(兼飲み会)をする予定の地域コミュニティです。
 
+# ATND
+<ul class="posts atnd-dest" ></ul>
+<script id="atnd-template" type="text/x-jquery-tmpl">
+    <li><span>${started_at}</span> &raquo; <a href="${event_url}">${title}</a></li>
+</script>
+<script type="text/javascript">
+    function handleAtnd(results) {
+        $("#atnd-template").tmpl(results.events).appendTo(".atnd-dest");
+    }
+</script>
+
+
 # お知らせ
 <ul class="posts">
 {% for post in site.posts limit:5 %}
@@ -28,7 +40,9 @@ Twitter
 # Facebook
 <iframe src="http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FHamamatsurb%2F196508373706679&amp;width=585&amp;colorscheme=light&amp;show_faces=true&amp;stream=false&amp;header=false&amp;height=182" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:585px; height:182px;" allowTransparency="true"></iframe>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
+
 <script>
 jQuery(function(){
   $.ajax({
@@ -50,3 +64,5 @@ jQuery(function(){
   });
 });
 </script>
+
+<script type="text/javascript" src="http://api.atnd.org/events/?keyword=hamamatsu.rb&count=5&format=jsonp&callback=handleAtnd"></script>
