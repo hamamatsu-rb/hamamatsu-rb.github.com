@@ -6,20 +6,32 @@ doorkeeper = {
 }
 
 function doneDoorkeeper(data) {
-  var arr, items = [], list;
+  var arr, items = [], list, table;
 
   $.each(data, function(){
-    var e = this.event,
-        start = formatDate(new Date(e.starts_at)),
-        end = formatTime(new Date(e.ends_at)),
-        url = e.public_url,
-        info = e.title + ': ' + start + ' ～ ' + end,
-        link = '<a href="' + e.public_url + '">' + info + '</a>';
-    items.push(link);
+    items.push(parseLine(this.event));
   });
 
-  list = '<ul><li>' + items.join('</li><li>') + '</li></ul>';
-  $('#doorkeeper-list').append(list);
+  list = '<tr>' + items.join('</tr><tr>') + '</tr>';
+  table = '<table class="table table-striped table-hover">' +
+          list +
+          '</table>';
+
+  $('#doorkeeper-list').append(table);
+}
+
+
+function parseLine(e) {
+  var start = formatDate(new Date(e.starts_at)),
+      end   = formatTime(new Date(e.ends_at)),
+      url   = e.public_url,
+      info  = e.title + ' <span class="badge">' + e.participants + '</span>',
+      day   = start + ' ～ ' + end,
+      detail = '<a class="btn btn-primary detail_button" href="' +
+               e.public_url +
+               '" role="button">detail</a>';
+
+  return '<td>' + [info, day, detail].join('</td><td>') + '</td>';
 }
 
 function formatDate(date) {

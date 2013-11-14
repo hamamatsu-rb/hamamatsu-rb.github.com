@@ -23,18 +23,17 @@ Hamamatsu.rbは、静岡県浜松市周辺のRuby技術者やRubyに関心があ
 [Hamamatsu.rbのGoogleグループ](https://groups.google.com/group/hamamatsu-rb?hl=ja) へ参加してください。
 
 <h1 style="margin-top: 2em">
-Twitter
+Twitter</h1>
 <a href="http://twitter.com/#!/hamamatsurb"><img src="http://a2.twimg.com/sticky/default_profile_images/default_profile_5_normal.png" width="24" height="24" style="vertical-align: middle; margin: 0 3px"></a>&nbsp;
 <a href="http://twitter.com/#!/hamamatsurb" style="font: 0.8em normal; color: gray">@hamamatsurb</a>&nbsp;
 <a href="http://twitter.com/#!/search/%23hamamatsurb" style="font: 0.8em normal; color: gray">#hamamatsurb</a>
 <a href="http://twitter.com/?status=@hamamatsurb%20subscribe" style="font: 0.8em normal; color: gray">Twitterグループに参加</a>
-</h1>
+
 <div id="members"></div>
 
 # Facebook
 <iframe src="http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FHamamatsurb%2F196508373706679&amp;width=585&amp;colorscheme=light&amp;show_faces=true&amp;stream=false&amp;header=false&amp;height=182" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:585px; height:182px;" allowTransparency="true"></iframe>
 
-<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 <script type="text/javascript" src="js/underscore.string.min.js"></script>
 <script type="text/javascript" src="js/jquery.tmpl.min.js"></script>
 <script type="text/javascript" src="js/doorkeeper.js"></script>
