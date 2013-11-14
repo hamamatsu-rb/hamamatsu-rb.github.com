@@ -1,4 +1,5 @@
-doorkeeper = {
+// doorkeeper API Ajax用オブジェクト
+doorkeeperApi = {
   type: "GET",
   url: 'http://api.doorkeeper.jp/groups/hmrb/events',
   dataType: "jsonp",
@@ -7,14 +8,16 @@ doorkeeper = {
   crossDomain: true
 }
 
+// アクセス失敗時にその旨を表示する
 function failDoorkeeper() {
   $('#doorkeeper-list')
     .html(
-      $('<div class="alert alert-warning">accessing to doorkeeper API failed.</div>')
+      $('<div class="alert alert-warning">Doorkeeper API の接続に失敗しました。</div>')
       .fadeIn('slow')
     );
 }
 
+// アクセス成功時にリストを作成する
 function doneDoorkeeper(data) {
   var arr, items = [], list, table;
 
@@ -27,9 +30,10 @@ function doneDoorkeeper(data) {
           list +
           '</table>';
 
-  $('#doorkeeper-list').html( $(table).fadeIn('fast') );
+  $('#doorkeeper-list').html($(table).fadeIn('fast'));
 }
 
+// イベント1件をパースする
 function parseLine(e) {
   var start = formatDate(new Date(e.starts_at)),
       end   = formatTime(new Date(e.ends_at)),
@@ -43,6 +47,7 @@ function parseLine(e) {
   return '<td>' + [info, day, detail].join('</td><td>') + '</td>';
 }
 
+// Dateオブジェクトから、yyyy/mm/dd hh:mm 形式の文字列にする
 function formatDate(date) {
   var weekdays = "日月火水木金土",
       y = date.getFullYear(),
@@ -53,6 +58,7 @@ function formatDate(date) {
   return y + '/' + m + '/' + d + '(' + w + ') ' + formatTime(date);
 }
 
+// Dateオブジェクトから、hh:mm 形式の時間の文字列にする
 function formatTime(date) {
   var h = date.getHours(),
       m = ('0' + date.getMinutes()).slice(-2); // padding by 0

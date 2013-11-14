@@ -57,7 +57,8 @@ jQuery(function(){
       $("#members").html("Oops, Something Is Wrong...");
     }
   });
-  $.ajax( doorkeeper ).done( doneDoorkeeper ).fail( failDoorkeeper );
+  // Doorkeeper API にアクセス
+  $.ajax( doorkeeperApi ).done( doneDoorkeeper ).fail( failDoorkeeper );
 });
 </script>
 
