@@ -6,6 +6,9 @@ title: Hamamatsu.rb
 Hamamatsu.rbは、静岡県浜松市周辺のRuby技術者やRubyに関心がある人が集まって、Rubyに関する何か(兼飲み会)をする予定の地域コミュニティです。
 
 # ATNDs
+<div id="doorkeeper-list" ></div>
+
+# ATNDs
 <ul class="events event-dest" ><li>ATNDを検索中...</li></ul>
 
 # お知らせ
@@ -31,9 +34,10 @@ Twitter
 # Facebook
 <iframe src="http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FHamamatsurb%2F196508373706679&amp;width=585&amp;colorscheme=light&amp;show_faces=true&amp;stream=false&amp;header=false&amp;height=182" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:585px; height:182px;" allowTransparency="true"></iframe>
 
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 <script type="text/javascript" src="js/underscore.string.min.js"></script>
 <script type="text/javascript" src="js/jquery.tmpl.min.js"></script>
+<script type="text/javascript" src="js/doorkeeper.js"></script>
 
 <script>
 jQuery(function(){
@@ -54,6 +58,7 @@ jQuery(function(){
       $("#members").html("Oops, Something Is Wrong...");
     }
   });
+  $.ajax( doorkeeper ).done( doneDoorkeeper );
 });
 </script>
 
