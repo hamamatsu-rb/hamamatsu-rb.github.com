@@ -46,6 +46,8 @@ a:visited {
   color: #a0a;
 }
 
+.detail_button:visited { color:#FFF; }
+
 table {
   font-size: inherit;
   font: 100%;
@@ -265,7 +267,7 @@ ul.posts {
   #related h2 {
     margin-bottom: 1em;
   }
-  
+
 #members {
   margin-bottom: 1em;
 }
