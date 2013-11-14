@@ -5,7 +5,7 @@ title: Hamamatsu.rb
 
 Hamamatsu.rbは、静岡県浜松市周辺のRuby技術者やRubyに関心がある人が集まって、Rubyに関する何か(兼飲み会)をする予定の地域コミュニティです。
 
-# ATNDs
+# イベント情報 (Doorkeeper)
 <div id="doorkeeper-list" ></div>
 
 # ATNDs
