@@ -2,7 +2,17 @@ doorkeeper = {
   type: "GET",
   url: 'http://api.doorkeeper.jp/groups/hmrb/events',
   dataType: "jsonp",
+  cache: false,
+  timeout: 5000,
   crossDomain: true
+}
+
+function failDoorkeeper() {
+  $('#doorkeeper-list')
+    .html(
+      $('<div class="alert alert-warning">accessing to doorkeeper API failed.</div>')
+      .fadeIn('slow')
+    );
 }
 
 function doneDoorkeeper(data) {
@@ -17,9 +27,8 @@ function doneDoorkeeper(data) {
           list +
           '</table>';
 
-  $('#doorkeeper-list').append(table);
+  $('#doorkeeper-list').html( $(table).fadeIn('fast') );
 }
-
 
 function parseLine(e) {
   var start = formatDate(new Date(e.starts_at)),
