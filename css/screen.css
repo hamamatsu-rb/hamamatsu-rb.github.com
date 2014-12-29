@@ -278,3 +278,7 @@ ul.posts {
   #members a img {
     border: 1px solid #ccc;
   }
+
+div.center{
+  text-align: center;
+}
