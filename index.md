@@ -5,10 +5,25 @@ title: Hamamatsu.rb
 
 Hamamatsu.rbは、静岡県浜松市周辺のRuby技術者やRubyに関心がある人が集まって、Rubyに関する何か(兼飲み会)をする予定の地域コミュニティです。
 
-# イベント情報 (Doorkeeper)
+# お知らせ
+
+<div class="center">
+<a href='http://rubykaigi-hamamatsu.s3-website-ap-northeast-1.amazonaws.com/'>
+<img src="/img/kaigi01.png" width="600"  align="center" />
+2015年3月28日 浜松Ruby会議01 開催決定！
+</div>
+</a>
+
+浜松Ruby会議は、Rubyistの話を聞きたい、Rubyistとつながりたい(技術力には自信がないけど向上心にあふれた)技術者、ITへの理解を深めたい学生の方のための、地域Ruby会議 です。
+
+みなさまのご来場を心からおまちしております。
+
+# イベント情報
+
+Hamamatsu.rb では、毎月勉強会を開催しています。
+
 <div id="doorkeeper-list" ><div align="center"><img src='img/loading.gif' /></div></div>
 
-# お知らせ
 <ul class="posts">
 {% for post in site.posts limit:5 %}
 <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
@@ -29,7 +44,10 @@ Twitter</h1>
 <div id="members"></div>
 
 # Facebook
-<iframe src="http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FHamamatsurb%2F196508373706679&amp;width=585&amp;colorscheme=light&amp;show_faces=true&amp;stream=false&amp;header=false&amp;height=182" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:585px; height:182px;" allowTransparency="true"></iframe>
+
+<div>
+  <iframe src="http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FHamamatsurb%2F196508373706679&amp;width=585&amp;colorscheme=light&amp;show_faces=true&amp;stream=false&amp;header=false&amp;height=182" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:585px; height:182px;" allowTransparency="true"></iframe>
+</div>
 
 <script type="text/javascript" src="js/underscore.string.min.js"></script>
 <script type="text/javascript" src="js/jquery.tmpl.min.js"></script>
