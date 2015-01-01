@@ -53,23 +53,6 @@ Twitter</h1>
 
 <script>
 jQuery(function(){
-  $.ajax({
-    url: 'http://api.twitter.com/1/hamamatsurb/hamamatsu-rb/members.json',
-    dataType: 'jsonp',
-    success: function(data, dataType) {
-      $.each(data.users, function(i, user) {
-	var name = user.screen_name;
-	var href = 'http://twitter.com/' + user.screen_name;
-	var src = user.profile_image_url;
-	var link = $('<a href="' + href + '" title="' + name + '"><img src="' + src + '" width="48" height="48" /></a>');
-        $("#members").append(link);
-      });
-    },
-    error: function(XMLHttpRequest, status, errorThrown) {
-      console.log(status);
-      $("#members").html("Oops, Something Is Wrong...");
-    }
-  });
   // Doorkeeper API にアクセス
   $.ajax( doorkeeperApi ).done( doneDoorkeeper ).fail( failDoorkeeper );
 });
