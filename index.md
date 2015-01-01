@@ -9,7 +9,7 @@ Hamamatsu.rbは、静岡県浜松市周辺のRuby技術者やRubyに関心があ
 
 <div class="center">
 <a href='http://rubykaigi-hamamatsu.s3-website-ap-northeast-1.amazonaws.com/'>
-<img src="/img/kaigi01.png" width="600"  align="center" />
+<img src="/img/kaigi01.png" class="img-responsive" /><br />
 2015年3月28日 浜松Ruby会議01 開催決定！
 </div>
 </a>
@@ -45,9 +45,7 @@ Twitter</h1>
 
 # Facebook
 
-<div>
   <iframe src="http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FHamamatsurb%2F196508373706679&amp;width=585&amp;colorscheme=light&amp;show_faces=true&amp;stream=false&amp;header=false&amp;height=182" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:585px; height:182px;" allowTransparency="true"></iframe>
-</div>
 
 <script type="text/javascript" src="js/underscore.string.min.js"></script>
 <script type="text/javascript" src="js/jquery.tmpl.min.js"></script>
