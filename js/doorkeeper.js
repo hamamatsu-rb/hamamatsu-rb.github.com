@@ -38,13 +38,14 @@ function parseLine(e) {
   var start = formatDate(new Date(e.starts_at)),
       end   = formatTime(new Date(e.ends_at)),
       url   = e.public_url,
-      info  = e.title + ' <span class="badge">' + e.participants + '</span>',
-      day   = start + ' ～ ' + end,
-      detail = '<a class="btn btn-primary detail_button" href="' +
-               e.public_url +
-               '" role="button">detail</a>';
+      info  = '<h3><a href="' + url + '" >' +
+        e.title + '</a></h3> <span class="badge">' +
+        e.participants + ' 人参加予定</span>' + '<br />' +
+        start + ' ～ ' + end + '<br />' +
+        e.venue_name + ' at ' + e.address ;
+  console.log(e);
 
-  return '<td>' + [info, day, detail].join('</td><td>') + '</td>';
+  return '<td>' + info + '</td>';
 }
 
 // Dateオブジェクトから、yyyy/mm/dd hh:mm 形式の文字列にする
