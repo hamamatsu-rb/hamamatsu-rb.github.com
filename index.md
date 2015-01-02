@@ -47,7 +47,7 @@ Twitter</h1>
 
 # Facebook
 
-  <iframe src="http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FHamamatsurb%2F196508373706679&amp;width=585&amp;colorscheme=light&amp;show_faces=true&amp;stream=false&amp;header=false&amp;height=182" style="border:none; overflow:hidden; width:585px; height:182px;" scrolling="no" frameborder="0" ></iframe>
+  <iframe src="http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FHamamatsurb%2F196508373706679&amp;width=285&amp;colorscheme=light&amp;show_faces=true&amp;stream=false&amp;header=false&amp;height=262" style="border:none; overflow:hidden; width:285px; height:262px;" scrolling="no" frameborder="0" ></iframe>
 
 <script type="text/javascript" src="js/underscore.string.min.js"></script>
 <script type="text/javascript" src="js/jquery.tmpl.min.js"></script>
