@@ -10,7 +10,7 @@ Hamamatsu.rbは、静岡県浜松市周辺のRuby技術者やRubyに関心があ
 <p class="event-title">浜松Ruby会議01 開催のお知らせ</p>
 
 <div class="center">
-<a href='http://rubykaigi-hamamatsu.s3-website-ap-northeast-1.amazonaws.com/'>
+<a href='http://regional.rubykaigi.org/hamamatsu01'>
 <img src="/img/kaigi01.png" class="img-responsive" /><br />
 2015年3月28日 浜松Ruby会議01 開催決定！
 </div>
