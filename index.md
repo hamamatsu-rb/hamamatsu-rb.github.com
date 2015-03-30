@@ -15,7 +15,7 @@ Hamamatsu.rb では、毎月勉強会を開催しています。
 
 # 過去のイベント
 
-### 浜松Ruby会議01 開催のお知らせ
+### 浜松Ruby会議01を開催しました
 
 <a href='http://regional.rubykaigi.org/hamamatsu01'>
 <img src="/img/kaigi01.png" class="img-responsive" />
