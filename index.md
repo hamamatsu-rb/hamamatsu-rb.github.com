@@ -32,13 +32,13 @@ Hamamatsu.rb では、毎月ペースで勉強会を開催しています。
 </a>
 
 2015年3月28日 に、<a href='http://regional.rubykaigi.org/hamamatsu01'>浜松Ruby会議01</a>を開催しました。
-Twitter ハッシュタグ : <a href='https://twitter.com/search?q=%23hmrk01'>#hmrk01</a>
+(<a href='https://twitter.com/search?q=%23hmrk01'>#hmrk01</a>)
 
 浜松Ruby会議とは、プログラミング言語Rubyのカンファレンスである「Ruby会議」の地域版として、浜松市で開催したイベントです。
 ご来場いただいた皆様、講演者として遠くから登壇して頂いた皆様、およびに厚いご支援いただいた皆様、誠に有り難う御座いました。
 
-当日の様子や資料は、るびまにレポートが掲載されておりますのでご覧になってください。  
-  ([Rubyist Magazine 0051号 # RegionalRubyKaigi レポート (52) 浜松 Ruby 会議 01](http://magazine.rubyist.net/?0051-HamamatsuRubyKaigi01Report))
+当日の様子や資料については、るびまにレポートが掲載されておりますのでご覧になってください。  
+* ([Rubyist Magazine 0051号 # RegionalRubyKaigiレポート(52) 浜松Ruby会議 01](http://magazine.rubyist.net/?0051-HamamatsuRubyKaigi01Report))
 
 
 
@@ -60,17 +60,24 @@ Twitter ハッシュタグ : <a href='https://twitter.com/search?q=%23hmrk01'>#h
 
 ## メーリングリスト
 
-[Hamamatsu.rbのGoogleグループ](https://groups.google.com/group/hamamatsu-rb?hl=ja) へ参加してください。
+* [Hamamatsu.rbのGoogleグループ](https://groups.google.com/group/hamamatsu-rb?hl=ja) へ参加してください。
 
 
 ## Twitter
 
-<a href="http://twitter.com/#!/hamamatsurb"><img src="http://a2.twimg.com/sticky/default_profile_images/default_profile_5_normal.png" width="24" height="24"></a>&nbsp;
-<a href="http://twitter.com/#!/hamamatsurb">@hamamatsurb</a>&nbsp;
-<a href="http://twitter.com/#!/search/%23hamamatsurb" >#hamamatsurb</a>
-<a href="http://twitter.com/?status=@hamamatsurb%20subscribe">Twitterグループに参加</a>
+公式ID:
 
-<div id="members"></div>
+* <a href="http://twitter.com/#!/hamamatsurb">@hamamatsurb</a>
+  <a href="http://twitter.com/#!/hamamatsurb"><img src="http://a2.twimg.com/sticky/default_profile_images/default_profile_5_normal.png" width="24" height="24"></a>  
+* <a href="http://twitter.com/?status=@hamamatsurb%20subscribe">Twitterグループに参加</a>  
+  <!-- この subscribe によるTwitterグループに参加ってどういう意味だろう？ -->
+
+Twitterハッシュタグの検索:
+
+* <a href="http://twitter.com/#!/search/%23hamamatsurb" >#hamamatsurb</a>  
+* <a href="http://twitter.com/#!/search/%23hamamatsurb" >#hmrb</a>  
+
+<!-- <div id="members"></div> -->
 
 ## Facebook
 
