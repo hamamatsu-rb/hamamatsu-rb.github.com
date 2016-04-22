@@ -6,8 +6,9 @@ title: Hamamatsu.rb
 # Hamamatsu.rb (ハママツ ルビー) とは
 
 Hamamatsu.rb (ハママツ ルビー) とは、静岡県浜松市周辺を活動拠点とする、プログラミング言語Rubyに関する地域コミュニティーです。
-ソフトウェアに関する勉強会や技術者同士の交流会(飲み会)などを行っています。
-主にRubyを中心とした技術や話題を扱っていますが、Ruby以外のソフトウェア・ハードウェアなど、IT技術全般に関心がある人が集まっています。
+
+Rubyプログラミングに関する勉強会や技術者同士の交流会(飲み会)などを行っています。
+主にRubyを中心とした技術や話題を扱っていますが、Ruby以外のソフトウェアからハードウェアまでIT技術全般に関心がある人が集まって情報交換を行っています。
 
 <!--
 Hamamatsu.rb (ハママツ ルビー) は、静岡県浜松市周辺の、プログラミング言語Rubyのソフトウェア技術者や、Rubyを中心とした技術に関心がある人が集まって、Rubyに関する何か(兼飲み会)をする予定の地域コミュニティです。
@@ -31,14 +32,15 @@ Hamamatsu.rb では、毎月ペースで勉強会を開催しています。
 </a>
 
 2015年3月28日 に、<a href='http://regional.rubykaigi.org/hamamatsu01'>浜松Ruby会議01</a>を開催しました。
+Twitter ハッシュタグ : <a href='https://twitter.com/search?q=%23hmrk01'>#hmrk01</a>
 
 浜松Ruby会議とは、プログラミング言語Rubyのカンファレンスである「Ruby会議」の地域版として、浜松市で開催したイベントです。
 ご来場いただいた皆様、講演者として遠くから登壇して頂いた皆様、およびに厚いご支援いただいた皆様、誠に有り難う御座いました。
-当日の様子は、こちらのるびま記事に掲載されています。
 
- ----沢山のご来場、誠に有り難う御座いました。
+当日の様子や資料は、るびまにレポートが掲載されておりますのでご覧になってください。  
+  ([Rubyist Magazine 0051号 # RegionalRubyKaigi レポート (52) 浜松 Ruby 会議 01](http://magazine.rubyist.net/?0051-HamamatsuRubyKaigi01Report))
 
-Twitter ハッシュタグ : <a href='https://twitter.com/search?q=%23hmrk01'>#hmrk01</a>
+
 
 ### 過去の勉強会情報
 
@@ -52,10 +54,9 @@ Twitter ハッシュタグ : <a href='https://twitter.com/search?q=%23hmrk01'>#h
 
 # アクセス
 
-## Wiki
+## Wikiページ
 
-[Wikiページ](https://github.com/hamamatsu-rb/hamamatsu-rb.github.com/wiki) 
-    * 勉強会の情報など。
+* 勉強会の情報などは[Wikiページ](https://github.com/hamamatsu-rb/hamamatsu-rb.github.com/wiki) に記載しています。
 
 ## メーリングリスト
 
