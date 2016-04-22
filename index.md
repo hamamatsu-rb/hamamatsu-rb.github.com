@@ -70,7 +70,8 @@ Hamamatsu.rb では、毎月ペースで勉強会を開催しています。
 * <a href="http://twitter.com/#!/hamamatsurb">@hamamatsurb</a>
   <a href="http://twitter.com/#!/hamamatsurb"><img src="http://a2.twimg.com/sticky/default_profile_images/default_profile_5_normal.png" width="24" height="24"></a>  
 * <a href="http://twitter.com/?status=@hamamatsurb%20subscribe">Twitterグループに参加</a>  
-  <!-- この subscribe によるTwitterグループに参加ってどういう意味だろう？ -->
+
+<!-- この subscribe によるTwitterグループに参加ってどういう意味だろう？ -->
 
 Twitterハッシュタグの検索:
 
