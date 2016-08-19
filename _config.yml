@@ -1,3 +1,0 @@
-markdown: rdiscount
-highliter: pygments
-exclude: [vendor]
