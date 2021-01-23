@@ -1,7 +1,7 @@
 // doorkeeper API Ajax用オブジェクト
 doorkeeperApi = {
   type: "GET",
-  url: 'http://api.doorkeeper.jp/groups/hmrb/events',
+  url: 'https://api.doorkeeper.jp/groups/hmrb/events',
   dataType: "jsonp",
   cache: false,
   timeout: 5000,
