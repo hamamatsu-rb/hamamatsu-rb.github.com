@@ -46,7 +46,7 @@ Twitter ハッシュタグ : <a href='https://twitter.com/search?q=%23hmrk01'>#h
 
 <h1>
 Twitter</h1>
-<a href="http://twitter.com/#!/hamamatsurb"><img src="http://a2.twimg.com/sticky/default_profile_images/default_profile_5_normal.png" width="24" height="24"></a>&nbsp;
+<a href="http://twitter.com/#!/hamamatsurb"><img src="https://a2.twimg.com/sticky/default_profile_images/default_profile_5_normal.png" width="24" height="24"></a>&nbsp;
 <a href="http://twitter.com/#!/hamamatsurb">@hamamatsurb</a>&nbsp;
 <a href="http://twitter.com/#!/search/%23hamamatsurb" >#hamamatsurb</a>
 <a href="http://twitter.com/?status=@hamamatsurb%20subscribe">Twitterグループに参加</a>
@@ -55,7 +55,7 @@ Twitter</h1>
 
 # Facebook
 
-  <iframe src="http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FHamamatsurb%2F196508373706679&amp;width=285&amp;colorscheme=light&amp;show_faces=true&amp;stream=false&amp;header=false&amp;height=262" style="border:none; overflow:hidden; width:285px; height:262px;" scrolling="no" frameborder="0" ></iframe>
+  <iframe src="https://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FHamamatsurb%2F196508373706679&amp;width=285&amp;colorscheme=light&amp;show_faces=true&amp;stream=false&amp;header=false&amp;height=262" style="border:none; overflow:hidden; width:285px; height:262px;" scrolling="no" frameborder="0" ></iframe>
 
 <script type="text/javascript" src="js/underscore.string.min.js"></script>
 <script type="text/javascript" src="js/jquery.tmpl.min.js"></script>
